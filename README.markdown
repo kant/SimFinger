@@ -1,14 +1,14 @@
-#SimFinger
+# SimFinger
 AWESOME SCREENCASTS
 
 ![Screenshot of SimFinger in Action](http://i.imgur.com/DktGiQr.png)
 
-##Summary
+## Summary
 SimFinger itself is composed of two parts. One is a fake “frame” that sits on top of the simulator. The frame consists of the most recent version of the iPhone or iPad (depending on what device your sim is set to). Clicking anywhere on it will just click-through to whatever is below. The other part is a little nub that follows around your cursor. It “indents” when you press down with your mouse, indicating what would be a “touch” on the phone.
 
 A good screencapture tool is your friend. [SnapzProX](http://www.ambrosiasw.com/utilities/snapzprox/) and [ScreenFlow](http://www.telestream.net/screenflow/) are good choices. 
 
-##Some Caveats
+## Some Caveats
 * Currently set to work with iOS 8.1 simulator in Xcode 6.1
 * Current imagery available for the following:
   * iPhone 6 Vertical and Landscape (6 Plus not supported)
@@ -16,7 +16,7 @@ A good screencapture tool is your friend. [SnapzProX](http://www.ambrosiasw.com/
   * iPhone 4S Vertical and Landscape (when sim is set to 3.5 inches)
   * iPad Air 2 Vertical and Landscape
 
-##Instructions
+## Instructions
 1. [Launch the iOS Simulator](http://stackoverflow.com/a/5048572/776167)
 2. Hide your dock with shortcut -Option-D (SimFinger locks itself to the lower left of your screen)
 3. Make sure the simulator's scale (Window > Scale) fits SimFinger. For retina devices, scale @ 50%. For non-retina, just use 100%.
@@ -25,11 +25,11 @@ A good screencapture tool is your friend. [SnapzProX](http://www.ambrosiasw.com/
   * If you want to build from code, launch the [SimFinger.xcodeproj](Fake/SimFinger/FakeFinger.xcodeproj)
   * If you want a compiled version, download [SimFingerApp.zip](SimFingerApp.zip)
 
-###Protips
+### Protips
 * If you want to change the overlay image without restarting SimFinger, just go to Control > Reposition iPhone Simulator Window after you have changed the device-type in the simulator.
 * [Enable Universal Access](http://mizage.com/help/accessibility.html)
 
-###If you run into issues with installing the homescreen apps, do the following:
+### If you run into issues with installing the homescreen apps, do the following:
 1. Run buildFakeApps.sh from terminal (Should be lots of happy success messages)
 2. From the simfinger source folder, go to Fake > SimFinger > SimAppCollection > FakeApps
 3. Copy Everything out of the FakeApps folder
